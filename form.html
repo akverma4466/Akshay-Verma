@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Application Form</title>
+</head>
+<body>
+    <h1>APPLICATION FORM</h1>
+    <p>Thank you for your interest in working with us. Please check below for available job opportunities that meet your criteria and send your application by filling out the Job Application Form.</p>
+    
+    <form action="#" method="post" enctype="multipart/form-data">
+        <!-- Full Name -->
+        <label for="fullname">* Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
+        
+        <!-- Email -->
+        <label for="email">* Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your Email" required><br><br>
+        
+        <!-- Age -->
+        <label for="age">* Age:</label><br>
+        <input type="number" id="age" name="age" placeholder="Age" required><br><br>
+        
+        <!-- Current Role -->
+        <label for="role">Which option best describes your current role?</label><br>
+        <select id="role" name="role">
+            <option value="student">Student</option>
+            <option value="professional">Professional</option>
+            <option value="intern">Intern</option>
+            <option value="other">Other</option>
+        </select><br><br>
+        
+        <!-- References -->
+        <label>* Would you like to list references?</label><br>
+        <input type="radio" id="yes" name="references" value="yes" required> Yes
+        <input type="radio" id="no" name="references" value="no"> No<br><br>
+        
+        <!-- Position -->
+        <label for="position">Which position would you like to apply for?</label><br>
+        <select id="position" name="position">
+            <option value="">Select an option</option>
+            <option value="developer">Developer</option>
+            <option value="designer">Designer</option>
+            <option value="manager">Manager</option>
+            <option value="tester">Tester</option>
+        </select><br><br>
+        
+        <!-- Programming Languages -->
+        <label>Which programming languages do you know?</label><br>
+        <input type="checkbox" name="languages" value="Java"> Java<br>
+        <input type="checkbox" name="languages" value="Python"> Python<br>
+        <input type="checkbox" name="languages" value="JavaScript"> JavaScript<br>
+        <input type="checkbox" name="languages" value="C++"> C++<br>
+        <input type="checkbox" name="languages" value="Swift"> Swift<br>
+        <input type="checkbox" name="languages" value="Ruby"> Ruby<br>
+        <input type="checkbox" name="languages" value=".NET"> .NET<br><br>
+        
+        <!-- Resume Upload -->
+        <label for="resume">Upload Resume (optional):</label><br>
+        <input type="file" id="resume" name="resume"><br><br>
+        
+        <!-- Comments -->
+        <label for="comments">Any Comments?</label><br>
+        <textarea id="comments" name="comments" placeholder="Enter your comment here..."></textarea><br><br>
+        
+        <!-- Submit -->
+        <input type="submit" value="Submit Application">
+    </form>
+</body>
+</html>

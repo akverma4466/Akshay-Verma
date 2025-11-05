@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student Marks Table</title>
+<style>
+  table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+  }
+  th, td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+  }
+  th {
+    background-color: #4CAF50; /* green */
+    color: white;
+  }
+  /* Different background colors for each column */
+  td:nth-child(1), th:nth-child(1) {
+    background-color: #FFCDD2; /* light red */
+  }
+  td:nth-child(2), th:nth-child(2) {
+    background-color: #C8E6C9; /* light green */
+  }
+  td:nth-child(3), th:nth-child(3) {
+    background-color: #BBDEFB; /* light blue */
+  }
+  td:nth-child(4), th:nth-child(4) {
+    background-color: #FFE0B2; /* light orange */
+  }
+</style>
+</head>
+<body>
+
+<table>
+  <thead>
+    <tr>
+      <th>Student Name</th>
+      <th>Roll Number</th>
+      <th>Marks</th>
+      <th>Courses</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Student 1</td>
+      <td>101</td>
+      <td>85</td>
+      <td>English, Science</td>
+    </tr>
+    <tr>
+      <td>Student 2</td>
+      <td>102</td>
+      <td>90</td>
+      <td>Math, English</td>
+    </tr>
+    <tr>
+      <td>Student 3</td>
+      <td>103</td>
+      <td>78</td>
+      <td>Social Studies, English</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

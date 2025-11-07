@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Email & Phone Validation</title>
+  <script>
+    function validateForm() {
+      var email = document.getElementById("email").value.trim();
+      var phone = document.getElementById("phone").value.trim();
+
+      // Email pattern (name@domain.com)
+      var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      if (!email.match(emailPattern)) {
+        alert("Invalid Email ID. Please enter in the format name@domain.com");
+        return false;
+      }
+
+      // Phone number validation (10 digits only)
+      var phonePattern = /^[0-9]{10}$/;
+      if (!phone.match(phonePattern)) {
+        alert("Phone number must contain exactly 10 digits only.");
+        return false;
+      }
+
+      alert("Form submitted successfully!");
+      return true;
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    form {
+      width: 320px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin: 6px 0;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2 align="center">JS VALIDATION - Email & Phone Number</h2>
+
+  <form onsubmit="return validateForm()">
+    <label for="email"><b>Email ID:</b></label><br>
+    <input type="text" id="email" name="email" placeholder="Enter your email"><br>
+
+    <label for="phone"><b>Phone Number:</b></label><br>
+    <input type="text" id="phone" name="phone" placeholder="Enter 10-digit number"><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>

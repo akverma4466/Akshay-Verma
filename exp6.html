@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form Validation</title>
+  <script>
+    function validateForm() {
+      var name = document.getElementById("name").value.trim();
+      var password = document.getElementById("password").value.trim();
+
+      // Check name: alphabets only and min length 6
+      var namePattern = /^[A-Za-z]+$/;
+      if (!name.match(namePattern)) {
+        alert("Name should contain alphabets only.");
+        return false;
+      }
+      if (name.length < 6) {
+        alert("Name should not be less than 6 characters.");
+        return false;
+      }
+
+      // Check password length
+      if (password.length < 6) {
+        alert("Password should not be less than 6 characters.");
+        return false;
+      }
+
+      alert("Form submitted successfully!");
+      return true;
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    form {
+      width: 300px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin: 6px 0;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2 align="center">Registration Page</h2>
+
+  <form onsubmit="return validateForm()">
+    <label for="name"><b>Name:</b></label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+
+    <label for="password"><b>Password:</b></label><br>
+    <input type="password" id="password" name="password" placeholder="Enter password"><br>
+
+    <input type="submit" value="Register">
+  </form>
+
+</body>
+</html>

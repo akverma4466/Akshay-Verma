@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Catalogue</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    table {
+      width: 90%;
+      border-collapse: collapse;
+      margin: 30px auto;
+    }
+    th, td {
+      border: 1px solid #b57b00;
+      padding: 10px;
+      text-align: center;
+      vertical-align: top;
+    }
+    th {
+      background-color: #f5c278;
+      color: black;
+    }
+    .sidebar {
+      width: 100px;
+      background-color: #f3f3f3;
+    }
+    .book-cover {
+      width: 80px;
+      height: 100px;
+    }
+    .add-btn {
+      background-color: gold;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .add-btn:hover {
+      background-color: orange;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 align="center">CATALOGUE PAGE</h2>
+  <p align="center">
+    The catalogue page contains details of all books available on the website.
+  </p>
+
+  <table>
+    <tr>
+      <th>Logo</th>
+      <th colspan="4">Website Name</th>
+    </tr>
+    <tr>
+      <td class="sidebar">
+        <b>Home</b><br><br>
+        Login<br><br>
+        CSE<br>
+        ECE<br>
+        EEE<br>
+        CIVIL
+      </td>
+
+      <td colspan="4">
+        <table width="100%">
+          <tr>
+            <th>Book Cover</th>
+            <th>Book Details</th>
+            <th>Price</th>
+            <th>Cart</th>
+          </tr>
+
+          <tr>
+            <td><img src="xmlbible.jpg" class="book-cover" alt="XML Bible"></td>
+            <td>
+              <b>Book:</b> XML Bible<br>
+              <b>Author:</b> Winston<br>
+              <b>Publication:</b> Wiely
+            </td>
+            <td>$40.5</td>
+            <td><button class="add-btn">Add to cart</button></td>
+          </tr>
+
+          <tr>
+            <td><img src="ai.jpg" class="book-cover" alt="AI Book"></td>
+            <td>
+              <b>Book:</b> AI<br>
+              <b>Author:</b> S. Russel<br>
+              <b>Publication:</b> Princetonhall
+            </td>
+            <td>$63</td>
+            <td><button class="add-btn">Add to cart</button></td>
+          </tr>
+
+          <tr>
+            <td><img src="java2.jpg" class="book-cover" alt="Java 2"></td>
+            <td>
+              <b>Book:</b> Java 2<br>
+              <b>Author:</b> Watson<br>
+              <b>Publication:</b> BPB Publications
+            </td>
+            <td>$35.5</td>
+            <td><button class="add-btn">Add to cart</button></td>
+          </tr>
+
+          <tr>
+            <td><img src="html24.jpg" class="book-cover" alt="HTML in 24 Hours"></td>
+            <td>
+              <b>Book:</b> HTML in 24 Hours<br>
+              <b>Author:</b> Sam Peter<br>
+              <b>Publication:</b> Sam Publication
+            </td>
+            <td>$50</td>
+            <td><button class="add-btn">Add to cart</button></td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Webpage Design</title>
+    
+    <style>
+        /* ========================================================= */
+        /* 2) Set a background image for the PAGE (<body> element) */
+        /* ========================================================= */
+        body {
+            /* Replace 'page-bg.jpg' with your actual background image file name */
+            background-image: url('page-bg.jpg'); 
+            background-repeat: no-repeat; /* Optional: Don't repeat the image */
+            background-size: cover; /* Optional: Cover the entire page */
+            background-attachment: fixed; /* Optional: Make the background fixed when scrolling */
+            
+            /* Basic text styles for the body */
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* ========================================================= */
+        /* 1) Use different font, styles: H1 selector */
+        /* ========================================================= */
+        h1 {
+            /* Different font style */
+            font-family: 'Georgia', serif; 
+            /* Different color */
+            color: darkred; 
+            /* Other styles */
+            text-align: center;
+            border-bottom: 2px solid darkred;
+            padding-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        /* ========================================================= */
+        /* 1) Use different font, styles: A class selector */
+        /* A class is activated by <p class="special-text"> */
+        /* ========================================================= */
+        .special-text {
+            /* Different font style */
+            font-family: 'Verdana', sans-serif; 
+            /* Different color */
+            color: navy; 
+            /* Other styles */
+            font-style: italic;
+            font-size: 1.1em;
+            padding: 10px;
+            margin: 15px 0;
+        }
+        
+        /* ========================================================= */
+        /* 2) Set a background image for a SINGLE ELEMENT (using an ID selector) */
+        /* An ID is activated by <div id="element-box"> */
+        /* ========================================================= */
+        #element-box {
+            width: 80%;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white fallback */
+            border: 5px dashed darkgreen;
+            border-radius: 10px;
+            
+            /* Background Image for the single element */
+            /* Replace 'element-bg.png' with your actual image file name */
+            background-image: url('element-bg.png'); 
+            background-repeat: repeat-x; /* Example: Only repeat horizontally */
+            background-position: bottom;
+        }
+        
+        /* ========================================================= */
+        /* 1) Use different font, styles: P selector */
+        /* ========================================================= */
+        p {
+            /* Different color */
+            color: #555;
+            line-height: 1.6;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Project Title: CSS Styling Demonstration</h1>
+    </header>
+
+    <div id="element-box">
+        <h2>Section with Element Background</h2>
+        
+        <p class="special-text">
+            This paragraph has the *.special-text* class applied to it. 
+            Notice the *navy color* and *Verdana font-family* that is inherited from the class selector defined in the style block.
+        </p>
+        
+        <p>
+            This is a standard paragraph. It uses the default body font and the slightly darker color defined by the *p selector*.
+            This box itself has a unique background image applied, which is repeated only horizontally (repeat-x).
+        </p>
+    </div>
+    
+    <footer>
+        <p style="text-align: center; font-size: 0.9em; color: gray;">
+            Webpage designed with HTML and CSS.
+        </p>
+    </footer>
+
+</body>
+</html>

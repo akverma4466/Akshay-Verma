@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question 9 – Background Repeat & Links</title>
+    <style>
+        /* control repetition of background image */
+        .repeat-x {
+            background-image: url("pattern.png");
+            background-repeat: repeat-x;
+            height: 150px;
+            border: 1px solid #000;
+            margin-bottom: 20px;
+        }
+
+        .no-repeat {
+            background-image: url("logo.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 150px;
+            border: 1px solid #000;
+        }
+
+        /* link styles */
+        a:link {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Background Repeat and Link Styles</h1>
+
+    <div class="repeat-x">
+        Background image is repeated only horizontally (repeat-x).
+    </div>
+
+    <div class="no-repeat">
+        Background image is shown once only (no-repeat).
+    </div>
+
+    <p>
+        Visit my <a href="https://example.com" target="_blank">example link</a>
+        to see the styles for link, visited, hover and active.
+    </p>
+</body>
+</html>
